@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <center> <img src="./السعوديه.png" alt="" id="ommar"></center>
+
+    <script>
+        let body = document.querySelector("body");
+        body.style.margin = "0";
+        let container = document.createElement("div");
+        container.style.width = "100%";
+        container.style.height = "100vh";
+        container.style.position = "relative";
+        container.style.backgroundColor = "green";
+        body.appendChild(container);
+        let.black = document.createElement("div");
+        black.style.position = "absolute";
+        black.style.width = "100%";
+        black.style.backgroundColor = "black";
+        black.style.height = "33.3333%";
+
+
+    </script>
+    <style>
+        #ommar {
+            width: auto;
+            height: 450px;
+            position: absolute;
+            z-index: 100;
+            right: 0;
+            left: 0;
+            min-height: 100px;
+            bottom: 100px;
+            margin: auto;
+        }
+
+        @media only screen and (max-width:991px) {
+            #ommar {
+                height: 300px;
+                width: auto;
+                height: 300px;
+                position: absolute;
+                z-index: 100;
+
+                bottom: 100px;
+                margin: auto;
+            }
+        }
+        @media only screen and (max-width:767px) {
+            #ommar {
+                height: 250px;
+                width: auto;
+                height: 250px;
+                position: absolute;
+                z-index: 100;
+
+                bottom: 100px;
+                margin: 0;
+            }
+        }
+        @media only screen and (max-width:575px) {
+            #ommar {
+                height: 100px;
+                width: auto;
+                height: 300px;
+                position: absolute;
+                z-index: 100;
+
+                bottom: 100px;
+                margin: 0;
+            }
+        }
+    </style>
+</body>
+
+</html>

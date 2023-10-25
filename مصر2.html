@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="./R.png" id="eagle">
+    <script>
+        let body = document.querySelector("body");
+        body.style.margin = "0";
+        let container = document.createElement("div");
+        container.style.width = "100%";
+        container.style.height = "100vh";
+        container.style.position = "relative";
+        body.appendChild(container);
+
+        let red = document.createElement("div");
+        red.style.position = "absolute";
+        red.style.top = "0"
+        red.style.width = "100%";
+        red.style.backgroundColor = "red";
+        red.style.height = "33.3333%";
+        container.appendChild(red);
+
+        // green
+
+        let black = document.createElement("div");
+        black.style.position = "absolute";
+        black.style.bottom = "0"
+        black.style.width = "100%";
+        black.style.backgroundColor = "black";
+        black.style.height = "33.3333%";
+        container.appendChild(black);
+
+    </script>
+    <style>
+        #eagle {
+            width: auto;
+            height: 200px;
+            position: absolute;
+            z-index: 100;
+            right: 0;
+            left: 0;
+            bottom: 230px;
+            margin: auto;
+        }
+    </style>
+
+</body>
+
+</html>
